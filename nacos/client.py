@@ -1108,9 +1108,12 @@ class NacosClient:
             "port": port,
             "weight": weight,
             "ephemeral": ephemeral,
+        }
+
+        metadata = map[
             "cpu": cpu,
             "gpu": gpu,
-        }
+        ]
 
         if cluster_name is not None:
             beat_data["cluster"] = cluster_name
