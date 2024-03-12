@@ -1111,8 +1111,8 @@ class NacosClient:
         }
 
         metadata = map[
-            "cpu": cpu,
-            "gpu": gpu,
+            "cpu": str(cpu),
+            "gpu": str(gpu),
         ]
 
         if cluster_name is not None:
